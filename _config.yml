@@ -23,19 +23,25 @@ description: A short bio or tagline about you.
 # Recommended size: 200x200 pixels.
 profile_picture_url: "/assets/images/profile.jpg"
 
+# -- Footer Credit --
+# You can edit the credit link and text here.
+# Please consider keeping this to support the project.
+credit:
+    text: "Star this template on"
+    url: "https://github.com/MrAdityaSaritaSingh/LinkMap" # Replace with your repo URL
+    author: "GitHub"
 
 # -- Analytics --
 # To enable analytics, set the 'provider' to 'google', 'mixpanel', or 'both'.
 # To disable, set 'provider' to false.
 # Then, fill in the corresponding ID or token under the 'providers' section.
 analytics:
-  provider: false # Options: false, "google", "mixpanel", "both"
-  providers:
-    google:
-      tracking_id: "" # e.g., G-XXXXXXXXXX
-    mixpanel:
-      token: ""       # e.g., "YOUR_MIXPANEL_TOKEN"
-
+    provider: false # Options: false, "google", "mixpanel", "both"
+    providers:
+        google:
+            tracking_id: "" # e.g., G-XXXXXXXXXX
+        mixpanel:
+            token: "" # e.g., "YOUR_MIXPANEL_TOKEN"
 
 # -- Main Links --
 # These will appear as buttons on your page.

@@ -143,6 +143,10 @@ analytics:
 
 Commit the change, and your site will start sending data to your chosen analytics platform.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. You are free to use, modify, and distribute this software, but please provide attribution by keeping the footer link.
+
 ---
 
 That's it! Enjoy your new, self-hosted links page.

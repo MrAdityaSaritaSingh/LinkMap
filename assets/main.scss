@@ -102,6 +102,31 @@ footer {
   color: var(--primary-color);
 }
 
+.footer-credit {
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.footer-credit:hover {
+  opacity: 1;
+}
+
+.footer-credit a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footer-credit a strong {
+  text-decoration: underline;
+}
+
+.footer-credit .fa-star {
+  margin-right: 4px;
+}
+
 /* --- Mobile First --- */
 @media (max-width: 480px) {
   body {
