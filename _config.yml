@@ -23,6 +23,20 @@ description: A short bio or tagline about you.
 # Recommended size: 200x200 pixels.
 profile_picture_url: "/assets/images/profile.jpg"
 
+
+# -- Analytics --
+# To enable analytics, set the 'provider' to 'google', 'mixpanel', or 'both'.
+# To disable, set 'provider' to false.
+# Then, fill in the corresponding ID or token under the 'providers' section.
+analytics:
+  provider: false # Options: false, "google", "mixpanel", "both"
+  providers:
+    google:
+      tracking_id: "" # e.g., G-XXXXXXXXXX
+    mixpanel:
+      token: ""       # e.g., "YOUR_MIXPANEL_TOKEN"
+
+
 # -- Main Links --
 # These will appear as buttons on your page.
 # To add a new link, copy the format below.

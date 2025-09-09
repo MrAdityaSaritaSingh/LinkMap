@@ -108,6 +108,41 @@ If you're comfortable with CSS, you can easily change the color scheme.
 
 Commit your changes, and your site's colors will be updated.
 
+### (Optional) Step 5: Add Analytics
+
+You can track visits to your page using Google Analytics or Mixpanel.
+
+1.  **Choose a Provider**: Open `_config.yml` and find the `analytics` section.
+2.  **Enable Your Provider**: Change `provider: false` to the provider you want to use.
+    *   For Google Analytics, use `"google"`.
+    *   For Mixpanel, use `"mixpanel"`.
+    *   To use both, use `"both"`.
+3.  **Add Your ID/Token**: Paste your tracking ID or token into the corresponding field under `providers`.
+
+**Example for Google Analytics:**
+```yaml
+analytics:
+  provider: "google" # Enable Google Analytics
+  providers:
+    google:
+      tracking_id: "G-XXXXXXXXXX" # Paste your ID here
+    mixpanel:
+      token: ""
+```
+
+**Example for Mixpanel:**
+```yaml
+analytics:
+  provider: "mixpanel" # Enable Mixpanel
+  providers:
+    google:
+      tracking_id: ""
+    mixpanel:
+      token: "YOUR_MIXPANEL_TOKEN" # Paste your Token here
+```
+
+Commit the change, and your site will start sending data to your chosen analytics platform.
+
 ---
 
 That's it! Enjoy your new, self-hosted links page.
