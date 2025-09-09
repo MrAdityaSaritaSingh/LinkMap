@@ -16,20 +16,6 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 
-  <!-- Dynamic Background Style -->
-  <style>
-    body {
-      {% if site.background.type == 'gradient' %}
-        background: linear-gradient(to top right, {{ site.background.gradient_start }}, {{ site.background.gradient_end }});
-      {% elsif site.background.type == 'image' %}
-        background-image: url('{{ site.background.image_url | relative_url }}');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-      {% endif %}
-    }
-  </style>
-
   {% seo %}
 </head>
 <body>

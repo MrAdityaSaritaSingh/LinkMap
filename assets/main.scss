@@ -1,22 +1,11 @@
 ---
 ---
-/* --- Color Palette --- */
-/* Edit these variables to customize the look and feel of your page. */
-:root {
-  --background-color: #F8F9FA;
-  --background-gradient: linear-gradient(to top right, #F8F9FA, #E9ECEF);
-  --text-color: #212529;
-  --primary-color: #007BFF;
-  --button-color: #FFFFFF;
-  --button-text-color: #212529;
-  --button-hover-color: #F1F3F5;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-}
+@use "skins/{{ site.skin | default: 'default' }}";
 
 /* --- Base Styles --- */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: var(--background-color); /* Fallback color */
+  background: var(--background-style);
   color: var(--text-color);
   margin: 0;
   padding: 20px;

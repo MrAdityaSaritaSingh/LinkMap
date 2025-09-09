@@ -6,6 +6,10 @@
 # -- Site Settings --
 # These settings control the main content of your page.
 
+# Choose a skin for your site.
+# Available options: default, dark, mint, ocean
+skin: "dark"
+
 # Appears in the browser tab.
 title: Your Name | Link Hub
 
@@ -19,24 +23,6 @@ description: A short bio or tagline about you.
 # Recommended size: 200x200 pixels.
 profile_picture_url: "/assets/images/profile.jpg"
 
-
-# -- Background Settings --
-# Choose between a gradient or a background image.
-#
-# type: "gradient" or "image"
-#
-background:
-  type: "gradient" # Options: "gradient", "image"
-
-  # Gradient settings (used if type is "gradient")
-  gradient_start: "#F8F9FA"
-  gradient_end: "#E9ECEF"
-
-  # Image settings (used if type is "image")
-  # Use a local image or a URL.
-  image_url: "https://picsum.photos/seed/linkmap-bg/1200/800"
-
-
 # -- Main Links --
 # These will appear as buttons on your page.
 # To add a new link, copy the format below.
@@ -45,15 +31,14 @@ background:
 #   url: https://your-link.com
 #
 main_links:
-  - title: My Personal Website
-    url: https://example.com
-  - title: Project Showcase
-    url: https://github.com/your-username
-  - title: Read My Blog
-    url: https://example.com/blog
-  - title: Contact Me
-    url: mailto:email@example.com
-
+    - title: My Personal Website
+      url: https://example.com
+    - title: Project Showcase
+      url: https://github.com/your-username
+    - title: Read My Blog
+      url: https://example.com/blog
+    - title: Contact Me
+      url: mailto:email@example.com
 
 # -- Social Links --
 # These will appear as icons in the footer.
@@ -66,18 +51,18 @@ main_links:
 # (e.g., 'github', 'twitter', 'linkedin', 'instagram')
 #
 social_links:
-  - icon: github
-    url: https://github.com/your-username
-  - icon: twitter
-    url: https://twitter.com/your-username
-  - icon: linkedin
-    url: https://linkedin.com/in/your-username
-  - icon: instagram
-    url: https://instagram.com/your-username
-  - icon: youtube
-    url: https://youtube.com/your-channel
+    - icon: github
+      url: https://github.com/your-username
+    - icon: twitter
+      url: https://twitter.com/your-username
+    - icon: linkedin
+      url: https://linkedin.com/in/your-username
+    - icon: instagram
+      url: https://instagram.com/your-username
+    - icon: youtube
+      url: https://youtube.com/your-channel
 
 # Do not change this line, it is required for GitHub Pages.
 # If you are deploying elsewhere, you can remove it.
 plugins:
-  - jekyll-seo-tag
+    - jekyll-seo-tag

@@ -34,7 +34,17 @@ Click the **Fork** button at the top-right of this page to copy this repository 
 
 All customizations happen in the `_config.yml` file. Click on the `_config.yml` file in your repository and use the pencil icon to edit it.
 
-Here's what each section does:
+#### Choose a Skin
+You can easily change the entire color scheme and background of your site by choosing a skin.
+
+```yaml
+# Choose a skin for your site.
+# Available options: default, dark, mint, ocean
+skin: "default"
+```
+
+#### Edit Your Content
+Here's what the other sections in `_config.yml` do:
 
 ```yaml
 # -- Site Settings --
