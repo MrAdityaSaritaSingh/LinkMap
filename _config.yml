@@ -1,55 +1,83 @@
-# Welcome to Jekyll!
+# Welcome to your LinkMap configuration file!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# You can customize your page by editing the values below.
+# For more information, see the README.md file.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# -- Site Settings --
+# These settings control the main content of your page.
 
-# Build settings
-theme: minima
+# Appears in the browser tab.
+title: Your Name | Link Hub
+
+# The main name displayed on the page.
+author_name: Your Name
+
+# A short bio or tagline that appears under your name.
+description: A short bio or tagline about you.
+
+# The URL for your profile picture.
+# Recommended size: 200x200 pixels.
+profile_picture_url: "/assets/images/profile.jpg"
+
+
+# -- Background Settings --
+# Choose between a gradient or a background image.
+#
+# type: "gradient" or "image"
+#
+background:
+  type: "gradient" # Options: "gradient", "image"
+
+  # Gradient settings (used if type is "gradient")
+  gradient_start: "#F8F9FA"
+  gradient_end: "#E9ECEF"
+
+  # Image settings (used if type is "image")
+  # Use a local image or a URL.
+  image_url: "https://picsum.photos/seed/linkmap-bg/1200/800"
+
+
+# -- Main Links --
+# These will appear as buttons on your page.
+# To add a new link, copy the format below.
+#
+# - title: Button Text
+#   url: https://your-link.com
+#
+main_links:
+  - title: My Personal Website
+    url: https://example.com
+  - title: Project Showcase
+    url: https://github.com/your-username
+  - title: Read My Blog
+    url: https://example.com/blog
+  - title: Contact Me
+    url: mailto:email@example.com
+
+
+# -- Social Links --
+# These will appear as icons in the footer.
+#
+# To add a new link, copy the format below.
+# - icon: icon-name
+#   url: https://your-link.com
+#
+# Find icon names at: https://fontawesome.com/v6/search?o=r&m=free&f=brands
+# (e.g., 'github', 'twitter', 'linkedin', 'instagram')
+#
+social_links:
+  - icon: github
+    url: https://github.com/your-username
+  - icon: twitter
+    url: https://twitter.com/your-username
+  - icon: linkedin
+    url: https://linkedin.com/in/your-username
+  - icon: instagram
+    url: https://instagram.com/your-username
+  - icon: youtube
+    url: https://youtube.com/your-channel
+
+# Do not change this line, it is required for GitHub Pages.
+# If you are deploying elsewhere, you can remove it.
 plugins:
-  - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - jekyll-seo-tag
