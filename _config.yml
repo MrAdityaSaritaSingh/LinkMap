@@ -57,7 +57,7 @@ social_links:
 # -- Analytics --
 # To enable analytics, set the 'provider' and fill in your ID or token.
 analytics:
-    provider: false # Options: false, "google", "mixpanel", "both"
+    provider: "mixpanel" # Options: false, "google", "mixpanel", "both"
     providers:
         google:
             tracking_id: "" # e.g., G-XXXXXXXXXX
