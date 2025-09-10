@@ -5,6 +5,7 @@ A free, simple, and self-hosted Linktree alternative built with Jekyll and desig
 [**➡️ View a Live Demo**](https://MrAdityaSaritaSingh.github.io/LinkMap/)
 
 ![LinkMap Demo](/assets/images/demo.jpg)
+![LinkMap Demo2](/assets/images/demo2.png)
 
 ## Features
 
