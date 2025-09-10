@@ -16,9 +16,12 @@ profile_picture_url: "/assets/images/profile.jpg"
 # -- Appearance --
 # These settings control the look and feel of your page.
 
-skin: "dark" # Options: default, dark, mint, ocean, or your own custom skin.
+# Remote skin will override the local skin if a URL is provided.
+remote_skin:
+    name: "" # The name to save the remote skin as (e.g., "ocean-blue").
+    url: "" # The URL to the remote .scss file.
+
 button_style: "filled" # Options: filled, outline, hard-shadow
-background_image: "" # Optional: Add a URL or local path to an image.
 
 # -- Links --
 # These are the main buttons that will appear on your page.

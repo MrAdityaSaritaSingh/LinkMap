@@ -1,6 +1,10 @@
 ---
 ---
-@use "skins/{{ site.skin | default: 'default' }}";
+{% if site.remote_skin.url != "" %}
+  @use "skins/remote/{{ site.remote_skin.name }}";
+{% else %}
+  @use "skins/{{ site.skin | default: 'default' }}";
+{% endif %}
 
 /* --- Base Styles --- */
 body {
