@@ -2,7 +2,7 @@
 
 A free, simple, and self-hosted Linktree alternative built with Jekyll and designed for GitHub Pages.
 
-[**➡️ View a Live Demo**](https://your-username.github.io/LinkMap/) <!-- TODO: Replace with your demo link -->
+[**➡️ View a Live Demo**](https://MrAdityaSaritaSingh.github.io/LinkMap/) <!-- TODO: Replace with your demo link -->
 
 ## Features
 
@@ -30,6 +30,7 @@ In your forked repository, open the `_config.yml` file and edit the settings. Th
 # ------------------ #
 
 # -- Main Content --
+title: Your Name | Link Hub
 author_name: Your Name
 description: A short bio or tagline about you.
 profile_picture_url: "/assets/images/profile.jpg"
@@ -44,13 +45,18 @@ main_links:
     url: https://example.com
   - title: Project Showcase
     url: https://github.com/your-username
+  - title: Contact Me
+    url: mailto:email@example.com
 
 # -- Social Icons --
+# Find icon names at: https://fontawesome.com/v6/search?o=r&m=free&f=brands
 social_links:
   - icon: github
     url: https://github.com/your-username
   - icon: twitter
     url: https://twitter.com/your-username
+  - icon: linkedin
+    url: https://linkedin.com/in/your-username
 ```
 
 Click **Commit changes** when you are done.
@@ -73,13 +79,6 @@ Click **Commit changes** when you are done.
 2.  Copy `custom.scss` and rename it (e.g., `my-theme.scss`).
 3.  Edit the color variables in your new file.
 4.  In `_config.yml`, set `skin: "my-theme"`.
-</details>
-
-<details>
-<summary><strong>🖼️ Adding a Background Image</strong></summary>
-
-1.  In `_config.yml`, find the `background_image` setting.
-2.  Add a URL or a local path to your image (e.g., `/assets/images/my-bg.jpg`).
 </details>
 
 <details>
