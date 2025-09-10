@@ -7,7 +7,7 @@
 # These settings control the main content of your page.
 
 # Choose a skin for your site.
-# Available options: default, dark, mint, ocean
+# Available options: default, dark, mint, ocean, or your own custom skin.
 skin: "dark"
 
 # Appears in the browser tab.
@@ -20,8 +20,47 @@ author_name: Your Name
 description: A short bio or tagline about you.
 
 # The URL for your profile picture.
-# Recommended size: 200x200 pixels.
+# Can be a local file (e.g., /assets/images/profile.jpg) or a URL.
 profile_picture_url: "/assets/images/profile.jpg"
+
+# -- Main Links --
+# These will appear as buttons on your page.
+# To add a new link, copy the format below.
+#
+# - title: Button Text
+#   url: https://your-link.com
+#
+main_links:
+    - title: My Personal Website
+      url: https://example.com
+    - title: Project Showcase
+      url: https://github.com/your-username
+    - title: Read My Blog
+      url: https://example.com/blog
+    - title: Contact Me
+      url: mailto:email@example.com
+
+# -- Social Links --
+# These will appear as icons under your tagline.
+#
+# To add a new link, copy the format below.
+# - icon: icon-name
+#   url: https://your-link.com
+#
+# Find icon names at: https://fontawesome.com/v6/search?o=r&m=free&f=brands
+# (e.g., 'github', 'twitter', 'linkedin', 'instagram')
+#
+social_links:
+    - icon: github
+      url: https://github.com/your-username
+    - icon: twitter
+      url: https://twitter.com/your-username
+    - icon: linkedin
+      url: https://linkedin.com/in/your-username
+    - icon: instagram
+      url: https://instagram.com/your-username
+    - icon: youtube
+      url: https://youtube.com/your-channel
 
 # -- Footer Credit --
 # You can edit the credit link and text here.
@@ -42,45 +81,6 @@ analytics:
             tracking_id: "" # e.g., G-XXXXXXXXXX
         mixpanel:
             token: "" # e.g., "YOUR_MIXPANEL_TOKEN"
-
-# -- Main Links --
-# These will appear as buttons on your page.
-# To add a new link, copy the format below.
-#
-# - title: Button Text
-#   url: https://your-link.com
-#
-main_links:
-    - title: My Personal Website
-      url: https://example.com
-    - title: Project Showcase
-      url: https://github.com/your-username
-    - title: Read My Blog
-      url: https://example.com/blog
-    - title: Contact Me
-      url: mailto:email@example.com
-
-# -- Social Links --
-# These will appear as icons in the footer.
-#
-# To add a new link, copy the format below.
-# - icon: icon-name
-#   url: https://your-link.com
-#
-# Find icon names at: https://fontawesome.com/v6/search?o=r&m=free&f=brands
-# (e.g., 'github', 'twitter', 'linkedin', 'instagram')
-#
-social_links:
-    - icon: github
-      url: https://github.com/your-username
-    - icon: twitter
-      url: https://twitter.com/your-username
-    - icon: linkedin
-      url: https://linkedin.com/in/your-username
-    - icon: instagram
-      url: https://instagram.com/your-username
-    - icon: youtube
-      url: https://youtube.com/your-channel
 
 # Do not change this line, it is required for GitHub Pages.
 # If you are deploying elsewhere, you can remove it.

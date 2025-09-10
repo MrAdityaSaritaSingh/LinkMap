@@ -1,0 +1,23 @@
+/* Your Custom Skin */
+/*
+  1. Duplicate this file and rename it to something unique (e.g., my-theme.scss).
+  2. Change the CSS variables below to your desired colors.
+  3. Update the 'skin' value in _config.yml to match the new filename without the .scss extension.
+*/
+:root {
+  /* -- Background -- */
+  /* Can be a single color or a gradient. */
+  --background-style: linear-gradient(to top right, #F8F9FA, #E9ECEF);
+
+  /* -- Text & Links -- */
+  --text-color: #212529;
+  --primary-color: #007BFF; /* Used for hover effects */
+
+  /* -- Buttons -- */
+  --button-color: #FFFFFF;
+  --button-text-color: #212529;
+  --button-hover-color: #F1F3F5;
+
+  /* -- Shadow -- */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
