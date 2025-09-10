@@ -36,35 +36,25 @@ All content customizations happen in the `_config.yml` file. Click on the file i
 
 ```yaml
 # -- Site Settings --
-
-# Appears in the browser tab.
 title: Your Name | Link Hub
-
-# The main name displayed on the page.
 author_name: Your Name
-
-# A short bio or tagline that appears under your name.
 description: A short bio or tagline about you.
+profile_picture_url: "/assets/images/profile.jpg"
 
-# The URL for your profile picture.
-# You can upload an image to your repository and link to it, or use a URL from another site.
-profile_picture_url: "https://via.placeholder.com/200" or "/assets/images/profile.jpg"
-
+# Choose a style for your link buttons.
+# Available options: filled, outline, hard-shadow
+button_style: "filled"
 
 # -- Main Links --
 # These will appear as buttons on your page.
-# Add, remove, or edit links by following the format.
 main_links:
   - title: My Personal Website
     url: https://example.com
   - title: Project Showcase
     url: https://github.com/your-username
-  - title: Dummy 
-    url: https:://xyx.com
 
 # -- Social Links --
 # These appear under your tagline.
-# Find icon names at: https://fontawesome.com/v6/search?o=r&m=free&f=brands
 social_links:
   - icon: github
     url: https://github.com/your-username
@@ -131,6 +121,15 @@ analytics:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. You are free to use, modify, and distribute this software, but please provide attribution by keeping the footer link.
+
+## Future Scope
+
+This project is actively being developed. Here are some of the features and improvements planned for the future:
+
+-   **Link Grouping**: The ability to group links under collapsible accordion sections, perfect for users with many links.
+-   **Dynamic Backgrounds**: Support for animated gradients and video backgrounds.
+-   **Link Thumbnails**: The option to add a small image or icon next to each link.
+-   **QR Code Generation**: A simple button to generate and display a QR code for easy sharing.
 
 ---
 

@@ -62,7 +62,7 @@
       <ul class="links-list">
         {% for link in site.main_links %}
           <li>
-            <a href="{{ link.url }}" class="link-button" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
+            <a href="{{ link.url }}" class="link-button link-button--{{ site.button_style | default: 'filled' }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
           </li>
         {% endfor %}
       </ul>
@@ -70,9 +70,7 @@
 
     <footer>
       <p class="footer-credit">
-        <a href="{{ site.credit.url }}" target="_blank" rel="noopener noreferrer">
-          <i class="fa-regular fa-star"></i> {{ site.credit.text }} <strong>{{ site.credit.author }}</strong>
-        </a>
+        <a href="https://github.com/MrAdityaSaritaSingh/LinkMap" target="_blank" rel="noopener noreferrer"></a>
       </p>
     </footer>
   </div>
