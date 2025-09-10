@@ -13,8 +13,8 @@
       <main>
         <ul class="links-list">
           {% for link in site.main_links %}
-            <li>
-              <a href="{{ link.url }}" class="link-button link-button--{{ site.button_style | default: 'filled' }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
+            <li class="link-item">
+              <a href="{{ link.url }}" class="link-button link-button--{{ site.button_style | default: 'filled' }} anim-lift-on-hover" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
             </li>
           {% endfor %}
         </ul>
