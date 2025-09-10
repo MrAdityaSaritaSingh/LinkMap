@@ -23,6 +23,10 @@ description: A short bio or tagline about you.
 # Can be a local file (e.g., /assets/images/profile.jpg) or a URL.
 profile_picture_url: "/assets/images/profile.jpg"
 
+# -- Background Image --
+# Add a background image to your page. Can be a local file (e.g., /assets/images/background.jpg) or a URL.
+background_image: "" # e.g., "https://picsum.photos/1200"
+
 # -- Main Links --
 # These will appear as buttons on your page.
 # To add a new link, copy the format below.

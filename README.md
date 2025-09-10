@@ -106,6 +106,18 @@ For a truly unique look, you can create your own skin.
 skin: "my-theme"
 ```
 
+#### Adding a Background Image
+
+You can add a custom background image that will appear on top of your chosen skin.
+
+1.  Find the `background_image` setting in `_config.yml`.
+2.  Add the URL or local path to your image. For local images, place them in the `assets/images` folder.
+
+```yaml
+# -- Background Image --
+background_image: "/assets/images/my-background.jpg"
+```
+
 ### (Optional) Step 5: Add Analytics
 
 You can track visits to your page using Google Analytics or Mixpanel.
