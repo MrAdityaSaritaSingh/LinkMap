@@ -6,11 +6,11 @@ First off, thank you for considering contributing to LinkMap! It's people like y
 
 ### Reporting Bugs
 
-If you find a bug, please make sure to [open an issue](https://github.com/adityarathore/LinkMap/issues/new?template=bug_report.md). Please provide as much information as possible, including screenshots, the browser you're using, and steps to reproduce the bug.
+If you find a bug, please make sure to [open an issue](https://github.com/MrAdityaSaritaSingh/LinkMap/issues/new?template=bug_report.md). Please provide as much information as possible, including screenshots, the browser you're using, and steps to reproduce the bug.
 
 ### Suggesting Enhancements
 
-If you have an idea for a new feature or an improvement, please [open an issue](https://github.com/adityarathore/LinkMap/issues/new?template=feature_request.md) to discuss it. This allows us to coordinate and make sure your suggestion fits with the project's goals.
+If you have an idea for a new feature or an improvement, please [open an issue](https://github.com/MrAdityaSaritaSingh/LinkMap/issues/new?template=feature_request.md) to discuss it. This allows us to coordinate and make sure your suggestion fits with the project's goals.
 
 ### Your First Code Contribution
 
