@@ -1,84 +1,57 @@
-# Welcome to your LinkMap configuration file!
+# ----------------------------------------------------------------------------- #
+# Welcome to your LinkMap configuration file.
 #
-# You can customize your page by editing the values below.
-# For more information, see the README.md file.
+# To personalize your page, simply edit the settings below and commit your
+# changes. For more details, please see the README.md file.
+# ----------------------------------------------------------------------------- #
 
-# -- Site Settings --
-# These settings control the main content of your page.
+# -- Main Content --
+# These settings control the text and images that appear on your page.
 
-# Choose a skin for your site.
-# Available options: default, dark, mint, ocean, or your own custom skin.
-skin: "default"
-
-# Appears in the browser tab.
 title: Your Name | Link Hub
-
-# The main name displayed on the page.
 author_name: Your Name
-
-# A short bio or tagline that appears under your name.
 description: A short bio or tagline about you.
-
-# The URL for your profile picture.
-# Can be a local file (e.g., /assets/images/profile.jpg) or a URL.
 profile_picture_url: "/assets/images/profile.jpg"
 
-# Choose a style for your link buttons.
-# Available options: filled, outline, hard-shadow
-button_style: "hard-shadow"
+# -- Appearance --
+# These settings control the look and feel of your page.
 
-# -- Main Links --
-# These will appear as buttons on your page.
-# To add a new link, copy the format below.
-#
-# - title: Button Text
-#   url: https://your-link.com
-#
+skin: "default" # Options: default, dark, mint, ocean, or your own custom skin.
+button_style: "filled" # Options: filled, outline, hard-shadow
+background_image: "" # Optional: Add a URL or local path to an image.
+
+# -- Links --
+# These are the main buttons that will appear on your page.
+# To add a new link, just copy the format.
 main_links:
-    - title: My Personal Website
-      url: https://example.com
-    - title: Project Showcase
-      url: https://github.com/your-username
-    - title: Read My Blog
-      url: https://example.com/blog
-    - title: Contact Me
-      url: mailto:email@example.com
+  - title: My Website
+    url: https://example.com
+  - title: Project Showcase
+    url: https://github.com/your-username
+  - title: Contact Me
+    url: mailto:email@example.com
 
-# -- Social Links --
-# These will appear as icons under your tagline.
-#
-# To add a new link, copy the format below.
-# - icon: icon-name
-#   url: https://your-link.com
-#
-# Find icon names at: https://fontawesome.com/v6/search?o=r&m=free&f=brands
-# (e.g., 'github', 'twitter', 'linkedin', 'instagram')
-#
+# -- Social Icons --
+# These icons will appear under your tagline.
+# Find more icon names at: https://fontawesome.com/v6/search?o=r&m=free&f=brands
 social_links:
-    - icon: github
-      url: https://github.com/your-username
-    - icon: twitter
-      url: https://twitter.com/your-username
-    - icon: linkedin
-      url: https://linkedin.com/in/your-username
-    - icon: instagram
-      url: https://instagram.com/your-username
-    - icon: youtube
-      url: https://youtube.com/your-channel
+  - icon: github
+    url: https://github.com/your-username
+  - icon: twitter
+    url: https://twitter.com/your-username
+  - icon: linkedin
+    url: https://linkedin.com/in/your-username
 
 # -- Analytics --
-# To enable analytics, set the 'provider' to 'google', 'mixpanel', or 'both'.
-# To disable, set 'provider' to false.
-# Then, fill in the corresponding ID or token under the 'providers' section.
+# To enable analytics, set the 'provider' and fill in your ID or token.
 analytics:
-    provider: false # Options: false, "google", "mixpanel", "both"
-    providers:
-        google:
-            tracking_id: "" # e.g., G-XXXXXXXXXX
-        mixpanel:
-            token: "" # e.g., "YOUR_MIXPANEL_TOKEN"
+  provider: false # Options: false, "google", "mixpanel", "both"
+  providers:
+    google:
+      tracking_id: "" # e.g., G-XXXXXXXXXX
+    mixpanel:
+      token: ""       # e.g., "YOUR_MIXPANEL_TOKEN"
 
-# Do not change this line, it is required for GitHub Pages.
-# If you are deploying elsewhere, you can remove it.
+# Required for GitHub Pages. Do not change.
 plugins:
-    - jekyll-seo-tag
+  - jekyll-seo-tag
