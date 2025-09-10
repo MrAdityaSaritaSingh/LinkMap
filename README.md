@@ -1,60 +1,51 @@
-# LinkMap - A Free Linktree Alternative for GitHub Pages
+# LinkMap
 
-LinkMap is a beginner-friendly Jekyll template that lets you create a beautiful, self-hosted landing page for all your links. It's free and hosted entirely on GitHub Pages.
+A free, simple, and self-hosted Linktree alternative built with Jekyll and designed for GitHub Pages.
 
-## Key Features
+[**➡️ View a Live Demo**](https://your-username.github.io/LinkMap/) <!-- TODO: Replace with your demo link -->
 
-- **Simple & Easy to Use**: No need to touch HTML or CSS. All customizations are done in a single configuration file.
-- **Fully Customizable**: Easily change the title, name, description, profile picture, and all your links.
-- **Modern Design**: Clean, mobile-first design that looks great on any device.
-- **Free Hosting**: Deploy for free with GitHub Pages.
-- **Font Awesome Icons**: Add social media links with a wide range of icons.
+## Features
 
-## Live Demo
+-   **Simple & Fast**: Get your site live in minutes.
+-   **Easy to Customize**: All settings are in one file. No HTML or CSS required.
+-   **Multiple Themes**: Choose from pre-built skins or create your own.
+-   **Free Hosting**: Deploy for free on GitHub Pages.
+-   **Analytics Ready**: Optional support for Google Analytics and Mixpanel.
 
-[Insert Your GitHub Pages URL Here]
+---
 
-## How to Use
+## Quick Start Guide
 
-Follow these steps to get your own LinkMap page up and running.
+### 1. Fork the Repository
 
-### Step 1: Fork the Repository
+Click the **[Fork](https://github.com/MrAdityaSaritaSingh/LinkMap/fork)** button at the top-right of this page to copy this project to your own GitHub account.
 
-Click the **Fork** button at the top-right of this page to copy this repository to your own GitHub account.
+### 2. Edit the Configuration File
 
-### Step 2: Enable GitHub Pages
-
-1.  In your forked repository, go to the **Settings** tab.
-2.  In the left sidebar, click on **Pages**.
-3.  Under "Build and deployment", for the **Source**, select **Deploy from a branch**.
-4.  For the **Branch**, select `main` (or `master`) and `/ (root)`, then click **Save**.
-5.  GitHub will generate a URL for your site (e.g., `https://your-username.github.io/LinkMap/`). It may take a few minutes for your site to go live.
-
-### Step 3: Edit Your Content
-
-All content customizations happen in the `_config.yml` file. Click on the file in your repository and use the pencil icon to edit the following sections:
+In your forked repository, open the `_config.yml` file and edit the settings. This is the only file you need to touch.
 
 ```yaml
-# -- Site Settings --
-title: Your Name | Link Hub
+# ------------------ #
+#      SETTINGS      #
+# ------------------ #
+
+# -- Main Content --
 author_name: Your Name
 description: A short bio or tagline about you.
 profile_picture_url: "/assets/images/profile.jpg"
 
-# Choose a style for your link buttons.
-# Available options: filled, outline, hard-shadow
-button_style: "filled"
+# -- Appearance --
+skin: "default" # Options: default, dark, mint, ocean
+button_style: "filled" # Options: filled, outline, hard-shadow
 
-# -- Main Links --
-# These will appear as buttons on your page.
+# -- Links --
 main_links:
-  - title: My Personal Website
+  - title: My Website
     url: https://example.com
   - title: Project Showcase
     url: https://github.com/your-username
 
-# -- Social Links --
-# These appear under your tagline.
+# -- Social Icons --
 social_links:
   - icon: github
     url: https://github.com/your-username
@@ -62,75 +53,47 @@ social_links:
     url: https://twitter.com/your-username
 ```
 
-After making your changes, scroll to the bottom and click **Commit changes**. Your website will automatically update.
+Click **Commit changes** when you are done.
 
-### Step 4: Customize Your Appearance
+### 3. Enable GitHub Pages
 
-You can change the entire look of your site by selecting a skin.
+1.  In your repository, go to **Settings** > **Pages**.
+2.  Under "Build and deployment," change the **Source** to **GitHub Actions**.
 
-#### Using a Pre-built Skin
-
-The easiest way to change your site's appearance is to use one of the included skins.
-
-1.  Open the `_config.yml` file.
-2.  Find the `skin` setting.
-3.  Change its value to one of the available options: `default`, `dark`, `mint`, or `ocean`.
-
-```yaml
-# Choose a skin for your site.
-# Available options: default, dark, mint, ocean
-skin: "dark"
-```
-
-#### Creating a Custom Skin
-
-For a truly unique look, you can create your own skin.
-
-1.  In your repository, navigate to the `_sass/skins/` directory.
-2.  Make a copy of the `custom.scss` file.
-3.  Rename the copy to something unique, like `my-theme.scss`.
-4.  Open your new file and edit the color values to your liking.
-5.  Go back to `_config.yml` and set the `skin` value to the name of your new file (without the `.scss` extension).
-
-```yaml
-skin: "my-theme"
-```
-
-### (Optional) Step 5: Add Analytics
-
-You can track visits to your page using Google Analytics or Mixpanel.
-
-1.  **Choose a Provider**: Open `_config.yml` and find the `analytics` section.
-2.  **Enable Your Provider**: Change `provider: false` to the provider you want to use.
-    *   For Google Analytics, use `"google"`.
-    *   For Mixpanel, use `"mixpanel"`.
-    *   To use both, use `"both"`.
-3.  **Add Your ID/Token**: Paste your tracking ID or token into the corresponding field under `providers`.
-
-**Example for Google Analytics:**
-```yaml
-analytics:
-  provider: "google" # Enable Google Analytics
-  providers:
-    google:
-      tracking_id: "G-XXXXXXXXXX" # Paste your ID here
-    mixpanel:
-      token: ""
-```
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. You are free to use, modify, and distribute this software, but please provide attribution by keeping the footer link.
-
-## Future Scope
-
-This project is actively being developed. Here are some of the features and improvements planned for the future:
-
--   **Link Grouping**: The ability to group links under collapsible accordion sections, perfect for users with many links.
--   **Dynamic Backgrounds**: Support for animated gradients and video backgrounds.
--   **Link Thumbnails**: The option to add a small image or icon next to each link.
--   **QR Code Generation**: A simple button to generate and display a QR code for easy sharing.
+**That's it!** Your site will be live at `https://your-username.github.io/LinkMap/` in a few minutes. Any new commits you push to your `main` branch will automatically trigger the deploy action and update the site.
 
 ---
 
-That's it! Enjoy your new, self-hosted links page.
+## Advanced Customization
+
+<details>
+<summary><strong>🎨 Creating a Custom Skin</strong></summary>
+
+1.  Go to the `_sass/skins/` directory.
+2.  Copy `custom.scss` and rename it (e.g., `my-theme.scss`).
+3.  Edit the color variables in your new file.
+4.  In `_config.yml`, set `skin: "my-theme"`.
+</details>
+
+<details>
+<summary><strong>🖼️ Adding a Background Image</strong></summary>
+
+1.  In `_config.yml`, find the `background_image` setting.
+2.  Add a URL or a local path to your image (e.g., `/assets/images/my-bg.jpg`).
+</details>
+
+<details>
+<summary><strong>📈 Adding Analytics</strong></summary>
+
+1.  In `_config.yml`, find the `analytics` section.
+2.  Set the `provider` to `"google"` or `"mixpanel"`.
+3.  Paste your tracking ID or token into the correct field.
+</details>
+
+## Contributing
+
+Contributions are welcome! Please see the [**Contributing Guidelines**](CONTRIBUTING.md) for more details on how to help.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
