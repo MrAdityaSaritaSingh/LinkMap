@@ -55,7 +55,10 @@
       <header>
         <div class="profile-picture" style="background-image: url('{{ site.profile_picture_url | relative_url }}');"></div>
         <h1>{{ site.author_name }}</h1>
-        <p>{{ site.description }}</p>
+        <p class="description">{{ site.description }}</p>
+        {% if site.summary %}
+          <p class="summary">{{ site.summary }}</p>
+        {% endif %}
         <ul class="social-links-list">
           {% for social in site.social_links %}
             <li>

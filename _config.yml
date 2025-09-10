@@ -10,8 +10,9 @@
 
 title: Aditya S. Rathore | Link Hub
 author_name: Aditya S. Rathore
-description: "Product Manager | Software Engineer. Builds 0-1 products with user-centric approach, was early engineer @Startup."
-profile_picture_url: "https://ugc.production.linktr.ee/7ae4f5ff-647d-4554-8c26-dec2bde7db25_profile-pic-2.png"
+description: "Product Manager | Software Engineer."
+summary: "Builds 0-1 products with user-centric approach, was early engineer @Startup."
+profile_picture_url: "assets/images/Headshot.png" # Optional: Add a URL or local path to an image.
 
 # -- Appearance --
 # These settings control the look and feel of your page.
@@ -40,18 +41,18 @@ main_links:
 # 2. Set the 'icon_style' (e.g., "brands", "solid", "regular").
 # 3. Set the 'icon_name' (e.g., "github", "link", "envelope").
 social_links:
-  - icon_style: "brands"
-    icon_name: "youtube"
-    url: "https://www.youtube.com/ @Aditya.S.Rathore"
-  - icon_style: "brands"
-    icon_name: "linkedin"
-    url: "https://www.linkedin.com/in/aditya-s-rathore/"
-  - icon_style: "brands"
-    icon_name: "x-twitter"
-    url: "https://x.com/adityasrathor3"
-  - icon_style: "solid"
-    icon_name: "globe"
-    url: "https://adityasrathore.com/"
+    - icon_style: "brands"
+      icon_name: "youtube"
+      url: "https://www.youtube.com/ @Aditya.S.Rathore"
+    - icon_style: "brands"
+      icon_name: "linkedin"
+      url: "https://www.linkedin.com/in/aditya-s-rathore/"
+    - icon_style: "brands"
+      icon_name: "x-twitter"
+      url: "https://x.com/adityasrathor3"
+    - icon_style: "solid"
+      icon_name: "globe"
+      url: "https://adityasrathore.com/"
 
 # -- Analytics --
 # To enable analytics, set the 'provider' and fill in your ID or token.
@@ -69,4 +70,4 @@ plugins:
 
 # Sass settings
 sass:
-  sass_dir: _sass
+    sass_dir: _sass
