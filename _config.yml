@@ -22,6 +22,7 @@ remote_skin:
     url: "" # The URL to the remote .scss file.
 
 button_style: "filled" # Options: filled, outline, hard-shadow
+background_image: "assets/images/background.jpg" # Optional: Add a URL or local path to an image.
 
 # -- Links --
 # These are the main buttons that will appear on your page.
