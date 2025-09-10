@@ -2,6 +2,7 @@
 ---
 @use "skins/{{ site.skin | default: 'default' }}";
 
-@import "base";
-@import "layout";
-@import "components";
+@use "base";
+@use "background";
+@use "layout";
+@use "components";

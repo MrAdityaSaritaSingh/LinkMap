@@ -15,6 +15,13 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="preload" as="image" href="{{ site.background_image | relative_url }}">
+
+  <style>
+    :root {
+      --background-image-url: url('{{ site.background_image | relative_url }}');
+    }
+  </style>
 
   {% seo %}
 
@@ -41,38 +48,41 @@
 </head>
 
 <body>
+  <div class="background-layers"></div>
 
-  <div class="container">
-    <header>
-      <div class="profile-picture" style="background-image: url('{{ site.profile_picture_url | relative_url }}');"></div>
-      <h1>{{ site.author_name }}</h1>
-      <p>{{ site.description }}</p>
-      <ul class="social-links-list">
-        {% for social in site.social_links %}
-          <li>
-            <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">
-              <i class="fa-{{ social.icon_style | default: 'solid' }} fa-{{ social.icon_name | default: 'link' }}"></i>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </header>
+  <div class="content-wrapper">
+    <div class="container">
+      <header>
+        <div class="profile-picture" style="background-image: url('{{ site.profile_picture_url | relative_url }}');"></div>
+        <h1>{{ site.author_name }}</h1>
+        <p>{{ site.description }}</p>
+        <ul class="social-links-list">
+          {% for social in site.social_links %}
+            <li>
+              <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">
+                <i class="fa-{{ social.icon_style | default: 'solid' }} fa-{{ social.icon_name | default: 'link' }}"></i>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </header>
 
-    <main>
-      <ul class="links-list">
-        {% for link in site.main_links %}
-          <li>
-            <a href="{{ link.url }}" class="link-button link-button--{{ site.button_style | default: 'filled' }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </main>
+      <main>
+        <ul class="links-list">
+          {% for link in site.main_links %}
+            <li>
+              <a href="{{ link.url }}" class="link-button link-button--{{ site.button_style | default: 'filled' }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </main>
 
-    <footer>
-      <p class="footer-credit">
-        <a href="https://github.com/MrAdityaSaritaSingh/LinkMap" target="_blank" rel="noopener noreferrer"></a>
-      </p>
-    </footer>
+      <footer>
+        <p class="footer-credit">
+          <a href="https://github.com/MrAdityaSaritaSingh/LinkMap" target="_blank" rel="noopener noreferrer"></a>
+        </p>
+      </footer>
+    </div>
   </div>
 
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>

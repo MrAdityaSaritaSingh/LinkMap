@@ -1,0 +1,29 @@
+/* --- Background Styles --- */
+.background-layers {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-layers::before,
+.background-layers::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-layers::before {
+  background-image: var(--background-image-url);
+  background-size: cover;
+  background-position: center;
+}
+
+.background-layers::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}

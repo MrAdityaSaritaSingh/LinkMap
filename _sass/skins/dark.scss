@@ -1,10 +1,11 @@
 /* skins/dark.scss */
 :root {
-  --background-style: linear-gradient(to top right, #3b3d3f, #8598ab);
+  --background-style: linear-gradient(to top, #252627, #acc7e2);
   --text-color: #F8F9FA;
   --primary-color: #17A2B8;
   --button-color: #343A40;
   --button-text-color: #F8F9FA;
   --button-hover-color: #495057;
   --shadow-color: rgba(0, 0, 0, 0.3);
+  --content-background-color: rgba(52, 58, 64, 0.8);
 }

@@ -18,7 +18,7 @@ profile_picture_url: "/assets/images/profile.jpg"
 
 skin: "dark" # Options: default, dark, mint, ocean, or your own custom skin.
 button_style: "filled" # Options: filled, outline, hard-shadow
-background_image: "" # Optional: Add a URL or local path to an image.
+background_image: "/assets/images/background.jpg" # Optional: Add a URL or local path to an image.
 
 # -- Links --
 # These are the main buttons that will appear on your page.
@@ -65,4 +65,4 @@ plugins:
 
 # Sass settings
 sass:
-  sass_dir: _sass
+    sass_dir: _sass
