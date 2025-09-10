@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2//css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="preload" as="image" href="{{ site.background_image | relative_url }}">
+  <link rel="icon" href="{{ site.profile_picture_url | relative_url }}" type="image/png">
+
+  <style>
+    :root {
+      --background-image-url: url('{{ site.background_image | relative_url }}');
+    }
+  </style>
+
+  {% include seo.html %}
+
+  {% include analytics.html %}
+</head>
