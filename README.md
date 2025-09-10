@@ -2,7 +2,9 @@
 
 A free, simple, and self-hosted Linktree alternative built with Jekyll and designed for GitHub Pages.
 
-[**➡️ View a Live Demo**](https://MrAdityaSaritaSingh.github.io/LinkMap/) <!-- TODO: Replace with your demo link -->
+[**➡️ View a Live Demo**](https://MrAdityaSaritaSingh.github.io/LinkMap/)
+
+![LinkMap Demo](/assets/images/demo.jpg)
 
 ## Features
 
