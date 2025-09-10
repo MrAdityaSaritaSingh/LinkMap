@@ -62,7 +62,7 @@ analytics:
         google:
             tracking_id: "" # e.g., G-XXXXXXXXXX
         mixpanel:
-            token: "" # e.g., "YOUR_MIXPANEL_TOKEN"
+            token: "1d2f2124417dcd370b95ab08328bfde5" # e.g., "YOUR_MIXPANEL_TOKEN"
 
 # Required for GitHub Pages. Do not change.
 plugins:
