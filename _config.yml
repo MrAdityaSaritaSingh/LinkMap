@@ -8,28 +8,30 @@
 # -- Main Content --
 # These settings control the text and images that appear on your page.
 
-title: Your Name | Link Hub
-author_name: Your Name
-description: A short bio or tagline about you.
-profile_picture_url: "/assets/images/profile.jpg"
+title: Aditya S. Rathore | Link Hub
+author_name: Aditya S. Rathore
+description: "Product Manager | Software Engineer. Builds 0-1 products with user-centric approach, was early engineer @Startup."
+profile_picture_url: "https://ugc.production.linktr.ee/7ae4f5ff-647d-4554-8c26-dec2bde7db25_profile-pic-2.png"
 
 # -- Appearance --
 # These settings control the look and feel of your page.
 
 skin: "dark" # Options: default, dark, mint, ocean, or your own custom skin.
-button_style: "filled" # Options: filled, outline, hard-shadow
+button_style: "hard-shadow" # Options: filled, outline, hard-shadow
 background_image: "/assets/images/background.jpg" # Optional: Add a URL or local path to an image.
 
 # -- Links --
 # These are the main buttons that will appear on your page.
 # To add a new link, just copy the format.
 main_links:
-    - title: My Website
-      url: https://example.com
-    - title: Project Showcase
-      url: https://github.com/your-username
-    - title: Contact Me
-      url: mailto:email@example.com
+    - title: Explore My Portfolio
+      url: http://adityasrathore.com
+    - title: Book a 1:1 call
+      url: https://app.reclaim.ai/m/aditya-s-rathore
+    - title: View My Resume
+      url: https://drive.google.com/drive/folders/1S7-XrgFijp-Jpd7bezqt1QFVx8VNaWlQ?usp=drive_link
+    - title: Blog
+      url: https://adigeak.github.io/
 
 # -- Social Icons --
 # These icons will appear under your tagline.
@@ -38,16 +40,18 @@ main_links:
 # 2. Set the 'icon_style' (e.g., "brands", "solid", "regular").
 # 3. Set the 'icon_name' (e.g., "github", "link", "envelope").
 social_links:
-    - icon_style: brands
-      icon_name: github
-      url: https://github.com/your-username
-    - icon_style: brands
-      icon_name: twitter
-      url: https://twitter.com/your-username
-    - icon_style: brands
-      icon_name: linkedin
-      url: https://linkedin.com/in/your-username
-    - url: https://another-example.com
+  - icon_style: "brands"
+    icon_name: "youtube"
+    url: "https://www.youtube.com/ @Aditya.S.Rathore"
+  - icon_style: "brands"
+    icon_name: "linkedin"
+    url: "https://www.linkedin.com/in/aditya-s-rathore/"
+  - icon_style: "brands"
+    icon_name: "x-twitter"
+    url: "https://x.com/adityasrathor3"
+  - icon_style: "solid"
+    icon_name: "globe"
+    url: "https://adityasrathore.com/"
 
 # -- Analytics --
 # To enable analytics, set the 'provider' and fill in your ID or token.
@@ -65,4 +69,4 @@ plugins:
 
 # Sass settings
 sass:
-    sass_dir: _sass
+  sass_dir: _sass
