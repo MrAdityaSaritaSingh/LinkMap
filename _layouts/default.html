@@ -51,7 +51,7 @@
         {% for social in site.social_links %}
           <li>
             <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-{{ social.icon }}"></i>
+              <i class="fa-{{ social.icon_style | default: 'solid' }} fa-{{ social.icon_name | default: 'link' }}"></i>
             </a>
           </li>
         {% endfor %}

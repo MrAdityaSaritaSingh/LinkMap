@@ -24,34 +24,41 @@ background_image: "" # Optional: Add a URL or local path to an image.
 # These are the main buttons that will appear on your page.
 # To add a new link, just copy the format.
 main_links:
-  - title: My Website
-    url: https://example.com
-  - title: Project Showcase
-    url: https://github.com/your-username
-  - title: Contact Me
-    url: mailto:email@example.com
+    - title: My Website
+      url: https://example.com
+    - title: Project Showcase
+      url: https://github.com/your-username
+    - title: Contact Me
+      url: mailto:email@example.com
 
 # -- Social Icons --
 # These icons will appear under your tagline.
-# Find more icon names at: https://fontawesome.com/v6/search?o=r&m=free&f=brands
+#
+# 1. Find an icon at: https://fontawesome.com/v6/search?o=r&m=free
+# 2. Set the 'icon_style' (e.g., "brands", "solid", "regular").
+# 3. Set the 'icon_name' (e.g., "github", "link", "envelope").
 social_links:
-  - icon: github
-    url: https://github.com/your-username
-  - icon: twitter
-    url: https://twitter.com/your-username
-  - icon: linkedin
-    url: https://linkedin.com/in/your-username
+    - icon_style: brands
+      icon_name: github
+      url: https://github.com/your-username
+    - icon_style: brands
+      icon_name: twitter
+      url: https://twitter.com/your-username
+    - icon_style: brands
+      icon_name: linkedin
+      url: https://linkedin.com/in/your-username
+    - url: https://another-example.com
 
 # -- Analytics --
 # To enable analytics, set the 'provider' and fill in your ID or token.
 analytics:
-  provider: false # Options: false, "google", "mixpanel", "both"
-  providers:
-    google:
-      tracking_id: "" # e.g., G-XXXXXXXXXX
-    mixpanel:
-      token: ""       # e.g., "YOUR_MIXPANEL_TOKEN"
+    provider: false # Options: false, "google", "mixpanel", "both"
+    providers:
+        google:
+            tracking_id: "" # e.g., G-XXXXXXXXXX
+        mixpanel:
+            token: "" # e.g., "YOUR_MIXPANEL_TOKEN"
 
 # Required for GitHub Pages. Do not change.
 plugins:
-  - jekyll-seo-tag
+    - jekyll-seo-tag
