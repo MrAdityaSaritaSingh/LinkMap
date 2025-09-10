@@ -1,0 +1,24 @@
+/* --- Base Styles --- */
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--background-style);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 0;
+}

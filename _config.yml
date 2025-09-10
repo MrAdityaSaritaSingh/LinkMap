@@ -62,3 +62,7 @@ analytics:
 # Required for GitHub Pages. Do not change.
 plugins:
     - jekyll-seo-tag
+
+# Sass settings
+sass:
+  sass_dir: _sass
